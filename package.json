@@ -1,17 +1,17 @@
 {
-  "name": "jenproj",
+  "name": "my-node-app",
   "version": "1.0.0",
-  "description": "jenkins try proj",
+  "description": "My Node.js application",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "ssh root@167.71.34.170 'cd /root/jenproj && git pull && npm install && pm2 restart app'"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "salah",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.17.1",
+    "pm2": "^5.1.0"
   }
-}
-"scripts": {
-  "deploy": "ssh root@167.71.34.170 'cd /root/jenproj && git pull && pm2 restart index.js'"
 }
