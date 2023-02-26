@@ -1,0 +1,14 @@
+{
+  "name": "jenproj",
+  "version": "1.0.0",
+  "description": "jenkins try proj",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
