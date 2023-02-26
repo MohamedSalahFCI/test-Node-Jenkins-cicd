@@ -12,3 +12,6 @@
     "express": "^4.18.2"
   }
 }
+"scripts": {
+  "deploy": "ssh user@167.71.34.170 'cd /root/jenproj && git pull && pm2 restart index.js'"
+}
